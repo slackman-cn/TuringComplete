@@ -18,3 +18,13 @@ Y4 = ABCD
 ```
 
 <img src="iShot_2025-09-03_01.34.35.png">
+
+
+### 全加器
+
+```
+SUM = A xor B xor C
+CAR = AB + (A xor B)C
+```
+
+<img src="iShot_2025-09-03_01.58.08.png">
