@@ -1,26 +1,28 @@
 import pygame
+import sys
+import random
+import time
 
-# pygame setup
+GRAY = (200,200,200)
+R = (255,0,0)
+G = (0,255,0)
+B = (0,0,255)
+
+# 扫雷: 右键标记雷
+# 选择难度 { 简单3x3 雷1; 普通12x12 雷20 }
 pygame.init()
-screen = pygame.display.set_mode((1280, 720))
-fpsClock = pygame.time.Clock()
-running = True
+screen = pygame.display.set_mode((800,600))
+font = pygame.font.SysFont('arial', 20)
 
-while running:
-    # poll for events
-    # pygame.QUIT event means the user clicked X to close your window
+while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            running = False
+            pygame.quit()
+            sys.exit()
 
-    # fill the screen with a color to wipe away anything from last frame
-    # screen.fill("purple")
-    screen.fill((60,25,60))
+    # components
+    screen.fill((240,240,240))
 
-    # RENDER YOUR GAME HERE
-
-    # flip() the display to put your work on screen
+    # render
     pygame.display.flip()
-    fpsClock.tick(30)  # limits FPS to 30
-
-pygame.quit()
+    pygame.time.Clock().tick(10)
