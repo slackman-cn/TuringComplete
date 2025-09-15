@@ -1,5 +1,5 @@
 ---
-title: Python pygame
+title: https://www.pygame.org
 since: 202508
 ---
 
@@ -11,6 +11,8 @@ since: 202508
 https://www.libhunt.com/compare-pygame-ce-vs-pygame
 pip install pygame
 pip install pygame-ce
+python3 -m pip install -U pygame --user
+sudo apt-get install python3-pygame
 
 while True:
     events()
@@ -58,11 +60,31 @@ while running:
 
     # flip() the display to put your work on screen
     pygame.display.flip()
-
     fpsClock.tick(60)  # limits FPS to 60
 
 pygame.quit()
 ```
+
+
+## 绘制按钮, 字体
+
+https://thepythoncode.com/article/make-a-button-using-pygame-in-python
+```
+# font = pygame.font.SysFont(None, 20)
+font = pygame.font.SysFont('arial', 20)
+available_fonts = pygame.font.get_fonts()
+print(available_fonts)
+
+# 矩形区域
+rect = pygame.Rect(300, 150+80*i,200,50)
+pygame.draw.rect(screen, GRAY, rect)
+
+# 文字居中
+text_surface = font.render('Click', True, (255,0,0))
+text_dest = text_surface.get_rect(center = rect.center)
+screen.blit(text_surface, text_dest)
+```
+
 
 ## 绘制网格
 ```
@@ -78,6 +100,7 @@ def render_board(w, h, size):
 screen.fill((255,255,255))
 render_board(400, 400, 50)
 ```
+
 
 ## 绘制 Sprite 位图
 
@@ -114,12 +137,7 @@ all_sprites_list.draw(screen)
 ```
 
 
-## 绘制按钮 Button Class
-
-https://thepythoncode.com/article/make-a-button-using-pygame-in-python
-
-
-设计模式 State Pattern
+## 设计模式 State Pattern
 ```
 status = 0, 1, x 不同图像
 
@@ -156,6 +174,7 @@ Context()
 ctx.click_next()
 ctx.click_next()
 ```
+
 
 ## 参考
 

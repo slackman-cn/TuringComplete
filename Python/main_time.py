@@ -9,10 +9,10 @@ running = True
 # 默认字体
 # font = pygame.font.SysFont(None, 20)
 font = pygame.font.SysFont('arial', 20)
-start_time = pygame.time.get_ticks()
-
 available_fonts = pygame.font.get_fonts()
 print(available_fonts)
+
+start_time = pygame.time.get_ticks()
 
 while running:
     # poll for events
