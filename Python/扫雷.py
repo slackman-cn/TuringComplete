@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+#
+# 依赖 pip install pygame
+# 
+# 扫雷游戏 Minesweeper
+# 胜利条件: 揭开所有非地雷的方格
+# 失败条件: 踩到地雷
+# 1. 鼠标左键揭开方格，鼠标右键标记地雷
+# 2. 如果揭开的方格显示数字，表示周围8个方格地雷总数
+# 3. 如果揭开的方格显示空白，自动揭开周围的方格
+# 4. 第一次点击永远安全，不会踩到雷
+
 import pygame
 import sys
 import random
