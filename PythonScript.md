@@ -9,6 +9,17 @@ json_str = json.dumps(json_data)
 json_data = json.loads(json_str)
 ```
 
+## import timeit
+
+```
+timeit.timeit('cmd', number=10000)
+n = timeit.timeit('"-".join(str(n) for n in range(100))', number=10000)
+print(timeit.timeit(stmt='x=15; y=15; sum=x+y'))
+
+$ python3 -m timeit "'-'.join(str(n) for n in range(100))"
+50000 loops, best of 5: 5.5 usec per loop
+```
+
 ## import random
 
 ```
