@@ -1,0 +1,20 @@
+s = ''
+t = ''
+# code here
+tstat={}
+for c in s1:
+    tstat[c] = tstat.get(c,0) + 1
+
+i=0
+j=0
+wstat={}
+while j < len(s):
+    # 扩大
+    wj = s[j]
+    j+=1
+
+    # 收缩
+    while check_valid():
+        wi = s[i]
+        i+=1
+
