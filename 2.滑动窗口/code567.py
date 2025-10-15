@@ -20,7 +20,7 @@ while j < len(s2):
         wstat[wj] = wstat.get(wj, 0) + 1
         if wstat[wj] == tstat[wj]:
             valid += 1
-
+    # 定长窗口
     while (j-i) >= len(s1):
         if valid == len(tstat):
             print("True")

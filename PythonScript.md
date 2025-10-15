@@ -1,5 +1,4 @@
 ## import json
-
 ```
 json_data = {
     id: 1
@@ -9,8 +8,14 @@ json_str = json.dumps(json_data)
 json_data = json.loads(json_str)
 ```
 
-## import timeit
+## import uuid
+```
+from uuid import uuid4
 
+print(f'This ID {str(uuid4())[:6]}')
+```
+
+## import timeit
 ```
 timeit.timeit('cmd', number=10000)
 n = timeit.timeit('"-".join(str(n) for n in range(100))', number=10000)
@@ -21,7 +26,6 @@ $ python3 -m timeit "'-'.join(str(n) for n in range(100))"
 ```
 
 ## import random
-
 ```
 random.seed()
 def genl (max):
