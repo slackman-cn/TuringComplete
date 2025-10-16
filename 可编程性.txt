@@ -1,5 +1,12 @@
 《数据结构和算法》
 
 学习框架思维，第一遍掌握整体，先不要管细节
-
 架构 = 套路 = 代码模板(经验)
+
+算法本质是穷举：找到所有解，不冗余，不遗漏
+数据结构为了方便操作CRUD，最底层实现是数组或链表
+
+递归是树
+
+https://leetcode.cn/studyplan/top-100-liked/
+https://labuladong.online/algo/
