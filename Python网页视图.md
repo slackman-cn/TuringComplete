@@ -2,11 +2,13 @@
 title: https://pywebview.flowrl.com/
 since: 202508
 link: https://github.com/r0x0r/pywebview/tree/master/examples
+link: https://pywebview.idepy.com/guide/installation.html
 ---
 
 
-## QuickStart
+## WebView 
 
+https://zhuanlan.zhihu.com/p/711012315
 ```
 # 不同系统依赖不一样
 pip install pywebview

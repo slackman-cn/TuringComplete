@@ -1,3 +1,22 @@
+## 安装 Python
+
+https://www.python.org/ftp/python/
+https://mirrors.aliyun.com/python-release/
+```
+C:\Users\Administrator>python -V
+Python 3.9.13
+
+C:\Users\Administrator>pip list
+Package    Version
+---------- -------
+pip        22.0.4
+setuptools 58.1.0
+
+
+pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+Writing to C:\Users\Administrator\AppData\Roaming\pip\pip.ini
+```
+
 ## import json
 ```
 json_data = {
