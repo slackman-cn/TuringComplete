@@ -1,21 +1,60 @@
 # 快速开发 Web (Python)
 
+```
+sudo apt install python3-venv
+python3 -m venv vbuild
+
+激活虚拟环境
+pip install fastapi
+//pip install "uvicorn[standard]"
+pip install uvicorn  # ASGI服务器
+pip install pydantic # 校验数据
+pip install jinja2
+pip freeze > requirements.txt
+
+$ uvicorn quickstart:app --reload --host 0.0.0.0  --port 8000  
+
+自动生成swagger接口文档，浏览器访问
+http://127.0.0.1:8080/docs
+
+RESTful规范
+POST /student/  增加
+GET  /student/  获取所有
+GET  /student/1 获取id=1
+PUT  /student/1 更新id=1
+DELETE /student/1  删除id=1
+```
+
+目录结构
+```
+http://192.168.1.1:3000/cnki/2025Q3-pyfast-monitor
+http://192.168.1.1:3000/cnki/2025Q3-pyfast-monitor2
+
+web/opentui/web-desktop
+====== 硕士学位论文/MSE/Master of Software Engineering/  mse-thesis-2025
+HOWTO
+Dockerfile
+main.py
+lib.py
+router/util.py
+static/image/favico.ico
+public/main.js
+templates/react.html
+```
+
+
 https://gitee.com/mizhexiaoxiao/vue-fastapi-admin
 ```
 ORM SQLAlchemy sync/async engines
 表单 WTForms form building
 ORM SQLModel support
 UI组件 Tabler
-
-SQLAlchemy 示例
+SQLAlchemy 示例, SQLModel 好像更简单
 https://cloud.tencent.com/developer/article/2561405
-
-SQLModel 好像更简单
 
 
 https://github.com/ChristopherGS/ultimate-fastapi-tutorial
 https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-6-jinja-templates/
-
 ```
 
 # 快速开发 WEB (PHP)
