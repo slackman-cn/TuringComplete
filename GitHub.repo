@@ -7,14 +7,30 @@ codecrafters-io/build-your-own-x
 项目简介: 所有算法均使用Python实现
 TheAlgorithms/Python
 
+
 项目简介: 专注于运行容器的Linux虚拟机
 lima-vm/lima
+
 
 项目简介: 所有小学、初中、高中及大学PDF教材
 https://github.com/TapXWorld/ChinaTextbook
 
+
 项目描述: 更具表现力的InstallerX安装程序
 https://github.com/wxxsfxyzm/InstallerX-Revived
 
+
 项目简介: 在Linux系统上无缝集成运行Windows应用程序
 TibixDev/winboat
+
+
+项目描述: 一款用于生成Xcode项目的Swift命令行工具
+https://github.com/yonaskolb/XcodeGen
+
+
+项目描述: 程序员在家做饭方法指南
+https://github.com/Anduin2017/HowToCook
+
+
+项目描述：支持 PDF、DjVu、EPUB、FB2 等多种格式的电子书阅读应用
+https://github.com/koreader/koreader
