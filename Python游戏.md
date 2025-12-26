@@ -6,6 +6,9 @@ since: 202508
 
 ## QuickStart
 
+https://pygamewidgets.readthedocs.io/en/stable/widgets/button/
+
+https://geek-docs.com/pygame/pygame-questions/140_pygame_whats_the_best_way_to_add_a_gui_to_a_pygame_application.html
 ```
 都是单个依赖
 https://www.libhunt.com/compare-pygame-ce-vs-pygame
