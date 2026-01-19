@@ -1,0 +1,14 @@
+## 生成 lex.yy.c
+flex calc.l
+
+## 生成 y.output  y.tab.c  y.tab.h
+bison -vdty calc.y
+
+
+gcc  y.tab.c lex.yy.c
+./a.out
+
+
+## flex入门
+flex hello.flex
+gcc lex.yy.c -lfl
